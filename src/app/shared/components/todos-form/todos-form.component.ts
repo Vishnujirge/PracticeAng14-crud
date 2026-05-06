@@ -3,13 +3,11 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-todos-form',
   templateUrl: './todos-form.component.html',
-  styleUrls: ['./todos-form.component.sass']
+  styleUrls: ['./todos-form.component.sass'],
 })
 export class TodosFormComponent implements OnInit {
+  isInEditMode: boolean = false;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

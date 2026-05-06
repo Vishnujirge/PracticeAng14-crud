@@ -1,6 +1,6 @@
 export interface Itodo {
-    userId: string
-    id: string
-    title: string
-    body:string
+  userId: number;
+  id: number;
+  title: string;
+  completed: boolean;
 }

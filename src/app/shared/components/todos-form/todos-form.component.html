@@ -1,1 +1,17 @@
-<p>todos-form works!</p>
+<h2>Todo Form</h2>
+
+<div class="card shadow">
+  <div class="card-body">
+    <h3 class="mb-4">Add Todo</h3>
+
+    <input type="text" class="form-control mb-3" placeholder="Enter todo..." />
+    <input type="text" class="form-control mb-3" placeholder="Enter state..." />
+
+    <button class="btn btn-primary w-100"
+    *ngIf="!isInEditMode"
+    >Add Todo</button>
+    <button class="btn btn-success w-100"
+        *ngIf="isInEditMode"
+    >Add update</button>
+  </div>
+</div>
