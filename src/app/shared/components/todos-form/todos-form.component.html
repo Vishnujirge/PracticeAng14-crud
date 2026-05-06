@@ -7,11 +7,12 @@
     <input type="text" class="form-control mb-3" placeholder="Enter todo..." />
     <input type="text" class="form-control mb-3" placeholder="Enter state..." />
 
-    <button class="btn btn-primary w-100"
-    *ngIf="!isInEditMode"
-    >Add Todo</button>
-    <button class="btn btn-success w-100"
-        *ngIf="isInEditMode"
-    >Add update</button>
+    <button class="btn btn-primary w-100" *ngIf="!isInEditMode">
+      Add Todo
+    </button>
+
+    <button class="btn btn-success w-100" *ngIf="isInEditMode">
+      Update Todo
+    </button>
   </div>
 </div>
