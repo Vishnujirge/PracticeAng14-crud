@@ -16,4 +16,22 @@ export class PipesComponent implements OnInit {
 
   }
 
+today = new Date();
+price = 2500;
+marks = 0.85;
+num = 12.45678;
+
+student = {
+  name: 'Vishnu',
+  age: 23,
+  city: 'Mumbai'
+};
+
+numbers = [10,20,30,40,50];
+
+obj = {
+  id: 1,
+  role: 'Developer'
+};
+
 }

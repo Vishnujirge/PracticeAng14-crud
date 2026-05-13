@@ -3,22 +3,63 @@
   <div class="row">
     <div class="col-4 mt-3 text-white bg-dark py-3">
       <p class="alert alert-info">
-        <strong class="text-warning bg-dark">uppercase :</strong>:
+        <strong class="text-warning bg-dark">uppercase Pipe :</strong>:
         {{ title | uppercase }}
       </p>
     </div>
     <div class="col-4 mt-3 text-white bg-dark py-3">
       <p class="alert alert-info">
-        <strong class="text-warning bg-dark">lowercase :</strong>
+        <strong class="text-warning bg-dark">lowercase Pipe :</strong>
         {{ title | lowercase }}
       </p>
     </div>
 
     <div class="col-4 mt-3 text-white bg-dark py-3">
       <p class="alert alert-info">
-        <strong class="text-warning bg-dark">titlecase : </strong
-        >{{ title | titlecase }}
+        <strong class="text-warning bg-dark">titlecase Pipe: </strong>
+        {{ title | titlecase }}
       </p>
     </div>
+  </div>
+</div>
+
+<div class="container bg-warning text-dark mt-4">
+  <p>
+    <strong class="text-warning bg-dark">date Pipe: </strong>
+    {{ today | date: "fullDate" }}
+  </p>
+
+  <p>
+    <strong class="text-warning bg-dark">currency Pipe :</strong>
+    {{ price | currency: "INR" }}
+  </p>
+
+  <p>
+    <strong class="text-warning bg-dark">percent Pipe :</strong>
+
+    {{ marks | percent }}
+  </p>
+
+  <p>
+    <strong class="text-warning bg-dark">number Pipe :</strong>
+
+    {{ num | number: "1.2-2" }}
+  </p>
+
+  <p>
+    <strong class="text-warning bg-dark">slice Pipe :</strong>
+
+    {{ title | slice: 0 : 7 }}
+  </p>
+
+  <pre>
+        <strong class="text-warning bg-dark">json Pipe :</strong>
+
+    {{ student | json }}</pre>
+
+  <div *ngFor="let item of obj | keyvalue">
+    <strong class="text-warning bg-dark">keyvalue Pipe :</strong>
+
+    {{ item.key }} : {{ item.value }}
   </div>
 </div>

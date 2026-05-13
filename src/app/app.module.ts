@@ -11,6 +11,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { ReactiveFormComponent } from './shared/components/reactive-form/reactive-form.component'
 import { ReactiveFormsModule } from '@angular/forms';
 import { PipesComponent } from './shared/components/pipes/pipes.component';
+import { ReversePipe } from './shared/components/pipes/reverse.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PipesComponent } from './shared/components/pipes/pipes.component';
     TodosFormComponent,
     TodosDashboardComponent,
     ReactiveFormComponent,
-    PipesComponent
+    PipesComponent,
+    ReversePipe
   ],
   imports: [
     BrowserModule,
